@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+    /* Primary */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --Very-dark-blue-main: hsl(217, 54%, 11%); /* main BG */
+    --Very-dark-blue-card: hsl(216, 50%, 16%); /* card BG */
+    --Very-dark-blue: hsl(215, 32%, 27%); /* line */
+    --White: hsl(0, 0%, 100%);
+
+    --font-size: 1.125rem;
+    --font-family: "Outfit", sans-serif;
+}
+
+body {
+    background-color: var(--Very-dark-blue-main);
+    min-height: 100dvh;
+    font-family: var(--font-family);
+    flex-direction: column;
+}
+
+#card {
+    background-color: var(--Very-dark-blue-card);
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-block-start: 1.9rem;
+    box-shadow: 0 15px 5px 15px hsla(215, 52%, 9%, 0.274),
+        0 20px 1px 40px hsla(218, 75%, 13%, 0.183);
+    cursor: pointer;
+    width: 22rem;
+}
+
+#card .img-container {
+    position: relative;
+}
+
+#card .img-container #img {
+    border-radius: 0.4rem;
+    height: 315px;
+    width: 100%;
+    position: relative;
+}
+
+#card .img-container .overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    background-color: var(--Cyan);
+    border-radius: 0.4rem;
+    transition: 0.3s ease-in-out;
+}
+
+#card .img-container:hover .overlay {
+    opacity: 0.5;
+}
+
+#card .img-container .view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#card .img-container:hover .view {
+    opacity: 1;
+}
+
+h1 {
+    font-size: 1.37rem;
+    font-weight: 600;
+    color: var(--White);
+    margin-top: 0.3rem;
+}
+
+h1:hover {
+    color: var(--Cyan);
+}
+
+p {
+    font-size: 1.14rem;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    margin-top: 0.7rem;
+}
+
+.wrapper {
+    border-bottom: 1px solid var(--Very-dark-blue);
+}
+
+.wrapper .name-wrapper h2 {
+    color: var(--Cyan);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.wrapper .time-wrapper h3 {
+    color: var(--Soft-blue);
+    font-size: 1rem;
+}
+
+.profile img {
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+}
+
+.profile h4 {
+    color: var(--Soft-blue);
+    font-size: 1.02rem;
+}
+
+.profile h4 > a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+.profile h4 > a:hover {
+    color: var(--Cyan);
+}
+
+footer p {
+    font-size: 0.7rem;
+}
+
+/* Media Query */
+@media screen and (max-width: 360.98px) {
+    #card {
+        width: 18rem;
+    }
+
+    #card .img-container #img {
+        height: 250px;
+    }
+
+    footer {
+        display: none;
+    }
+}
