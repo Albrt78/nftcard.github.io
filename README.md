@@ -20,12 +20,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/NFT_preview_card_component_screenshot.png)
+![NFT Card Component](./src/NFT_preview_card_component_screenshot.png)
 
 ### Links
 
--   Solution URL: [https://github.com/Albrt78/frontend_mentor_project/tree/main/NFT%20Card]
--   Live Site URL: [https://65b23a1bb4fdf4580ad76a93--curious-dieffenbachia-352314.netlify.app/]
+-   Solution URL: [NFT Card Component](https://github.com/Albrt78/nftcard.github.io)
+-   Live Site URL: [NFT Card Component](https://albrt78.github.io/nftcard.github.io/)
 
 ### Built with
 
