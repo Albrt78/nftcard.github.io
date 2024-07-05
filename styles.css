@@ -26,7 +26,6 @@ body {
     background-color: var(--Very-dark-blue-card);
     border-radius: 1rem;
     overflow: hidden;
-    margin-block-start: 1.9rem;
     box-shadow: 0 15px 5px 15px hsla(215, 52%, 9%, 0.274),
         0 20px 1px 40px hsla(218, 75%, 13%, 0.183);
     cursor: pointer;
@@ -129,16 +128,50 @@ footer p {
 }
 
 /* Media Query */
-@media screen and (max-width: 360.98px) {
+@media (max-width: 1280.98px) {
     #card {
-        width: 18rem;
+        width: 20rem;
     }
 
     #card .img-container #img {
         height: 250px;
     }
+}
 
-    footer {
-        display: none;
+@media (max-width: 375.98px) {
+    #card {
+        width: 19rem;
+    }
+}
+
+@media (max-width: 320.98px) {
+    #card {
+        margin-top: 1.5rem;
+        width: 17rem;
+    }
+
+    #card .img-container #img {
+        height: 200px;
+    }
+
+    .wrapper .name-wrapper h2 {
+        font-size: 0.9rem;
+    }
+
+    .wrapper .time-wrapper h3 {
+        font-size: 0.9rem;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile h4 {
+        font-size: 0.9rem;
+    }
+
+    .profile h4 > a {
+        font-size: 0.9rem;
     }
 }
